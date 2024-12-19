@@ -1,0 +1,300 @@
+
+:root{
+    --body-font:"poppins";
+    --box-shadow: 4px 4px 20px #00000017, -4px -4px 20px #0000000a;
+    --primary-color: #B12A26;
+}
+img{
+    width: 100%;
+}
+body {
+    font-family: var(--body-font);
+    background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+    height: 100vh;
+  }
+  @media screen and (max-width: 480px) {
+    body {
+      padding: 0.8em;
+    }
+  }
+  
+  .video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-bg video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .app {
+    background-color: white;
+    max-width: 1250px;
+    max-height: 860px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  a.navbar-brand {
+    margin: 0;
+}
+.search-bar {
+    height: 58px;
+    display: flex;
+    width: 100%;
+    max-width: 568px;
+    padding-left: 16px;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+  .search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--search-bg);
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+    background-image: url("../images/iconamoon_search-bold.svg");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 16px 48%;
+    color: #22222230;
+  }
+  .search-bar input::-moz-placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .search-bar input:-ms-input-placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .search-bar input::placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  
+  .notification svg {
+    width: 22px;
+    color: #f9fafb;
+    flex-shrink: 0;
+  }
+  
+  .notification {
+    position: relative;
+  }
+  .notification-number {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    right: -6px;
+    top: -6px;
+  }
+  .notification + svg {
+    margin-left: 22px;
+  }
+  @media screen and (max-width: 945px) {
+    .notification + svg {
+      display: none;
+    }
+  }
+  .profile-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 22px;
+}
+.user-profile-hp {
+    display: flex;
+    align-items: center;
+}
+.admin-name-data p {
+    margin: 0;
+}
+.hp-flex-need {
+    display: flex;
+    align-items: center;
+}
+.hp-profile-bg {
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+.dropdown-toggle::after {
+margin-left: 20px;
+}
+.hp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.icard-section {
+    box-shadow: inset #00000016 2px 2px 4px, inset #00000016 -2px -2px 4px, 0px 4px 10px #0000001a;
+    border-radius: 5px;
+    background-image: url(../images/icard_design_bg_1.svg);
+}
+.Department {
+    text-align: center;
+    font-size: 24px;
+}
+.icard-section {
+    box-shadow: inset #00000016 2px 2px 4px, inset #00000016 -2px -2px 4px, 0px 4px 10px #0000001a;
+    border-radius: 5px;
+    background-image: url(../images/icard_design_bg_1.svg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.image-section img {
+    width: 50%;
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
+img.user-image {
+    z-index: 1;
+    width: 40%;
+    padding: 30px;
+    background: #D9D9D9;
+    border-radius: 100%;
+    margin-top: 70px;
+}
+img.user-image-bg {
+    position: absolute;
+}
+.user-detail {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 20px;
+}
+.destination-user h4 {
+    background: linear-gradient(45deg, #B12A26, #390BC4);
+    display: inline-block;
+    padding: 5px 50px;
+    border-radius: 30px;
+    color: white;
+}
+.hp-look-table {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+tbody.table-hp th {
+    font-weight: 500;
+    font-size: 18px;
+}
+tbody.table-hp td {
+    font-size: 18px;
+    color: #00000050;
+}
+tbody.table-hp td, tbody.table-hp th {
+    border: none;
+}
+.content-user-application-section {
+    box-shadow: inset #00000016 2px 2px 4px, inset #00000016 -2px -2px 4px, 0px 4px 10px #0000001a;
+    border-radius: 5px;
+    padding: 20px;
+}
+.number-with-image img {
+    width: 56px;
+    margin: 10px 20px;
+}
+.number-with-image {
+    display: flex;
+    align-items: center;
+    border-radius: 0 40px 40px 0;
+    width: 160px;
+    box-shadow: inset #25252540 -2px -2px 4px, inset #6a6a6a40 2px 2px 4px;
+    justify-content: space-around;
+}
+.number-with-image p {
+    margin: 0 0 0 20px;
+    font-size: 30px;
+    color: white;
+}
+.user-application {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+.applications-content {
+    padding: 0 20px;
+}
+.user-application:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.user-application:nth-child(even) .number-with-image {
+    border-radius: 40px 0 0 40px;
+}
+@media screen and (max-width: 769px) {
+    
+    .user-application, .user-application:nth-child(even) {
+       
+        display: flex ;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .user-application:nth-child(even) .number-with-image {
+        border-radius: 0 40px 40px 0;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .admin-name-data {
+        display: none;
+    }
+    img.profile-img {
+        margin-right: 0;
+    }
+    .search-bar{
+        display: none;
+    }
+  }
