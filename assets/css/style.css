@@ -257,12 +257,26 @@ tbody.table-hp td, tbody.table-hp th {
     font-size: 30px;
     color: white;
 }
+.number-box {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    left: 10px;
+    height: 40px;
+    color: white;
+}
 .user-application {
     padding: 20px 0;
     display: flex;
     align-items: center;
     box-shadow: var(--box-shadow);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    position: relative;
+    justify-content: center;
+}
+.imageandtext h4 {
+    margin-top: 15px;
 }
 .applications-content {
     padding: 0 20px;
@@ -613,7 +627,14 @@ tbody.table-hp td, tbody.table-hp th {
 .additional-options a:hover {
     opacity: 0.8;
 }
-
+.imageandtext img {
+    width: 50px;
+}
+.imageandtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .error-message {
     color: #ff4477;
     font-size: 0.85rem;
