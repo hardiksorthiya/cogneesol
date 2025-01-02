@@ -290,11 +290,8 @@ tbody.table-hp td, tbody.table-hp th {
 }
 @media screen and (max-width: 769px) {
     
-    .user-application, .user-application:nth-child(even) {
-       
-        display: flex ;
-        align-items: flex-start;
-        flex-direction: column;
+    .content-user-application-section .row {
+        gap: 20px;
     }
     .user-application:nth-child(even) .number-with-image {
         border-radius: 0 40px 40px 0;
