@@ -288,11 +288,14 @@ tbody.table-hp td, tbody.table-hp th {
 .user-application:nth-child(even) .number-with-image {
     border-radius: 40px 0 0 40px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
     
     .content-user-application-section .row {
         gap: 20px;
     }
+}
+@media screen and (max-width: 769px) {
+    
     .user-application:nth-child(even) .number-with-image {
         border-radius: 0 40px 40px 0;
     }
