@@ -453,7 +453,7 @@ tbody.table-hp td, tbody.table-hp th {
 
 .login-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .login-header h1 {
@@ -554,7 +554,7 @@ tbody.table-hp td, tbody.table-hp th {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0;
+    margin: 10px 0;
 }
 
 .social-button {
@@ -596,7 +596,7 @@ tbody.table-hp td, tbody.table-hp th {
 .divider {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 10px 0;
     color: rgba(255, 255, 255, 0.4);
 }
 
